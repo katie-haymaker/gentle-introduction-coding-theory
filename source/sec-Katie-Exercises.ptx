@@ -3,6 +3,19 @@
 <section xml:id="sec-Katie-Exercises" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Exercises Workspace</title>
 
-  <p> Katie will put exercises in progress here. </p>
+  <p> Katie will put exercises in progress here. I am having trouble putting instructions at the beginning of a list of tasks. Need to figure out how </p>
+<p>
+            For each of the following vectors, determine if it is in the code <m>C</m> with parity-check matrix <m>H</m>. 
+        </p>
+  <activity>
+   
 
+    <task>
+        <statement>
+            <p>
+             <m>(0, 1, 1, 1)</m>   
+            </p>
+        </statement>
+    </task>
+</activity>
 </section>
