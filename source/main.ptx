@@ -17,6 +17,9 @@
      <!-- Include chapters -->
     <xi:include href="./ch-Hamming-Codes.ptx" />
 
+      <!-- Include chapters -->
+    <xi:include href="./ch-Christine-Playground.ptx" />
+
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
