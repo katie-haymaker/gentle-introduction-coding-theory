@@ -6,7 +6,6 @@
 
   <book xml:id="my-great-book">
     <title>A Gentle Introduction to Coding Theory</title>
-    <subtitle>An example to get you started</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
