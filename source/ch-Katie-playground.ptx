@@ -7,6 +7,10 @@
     <p> Text before the first section. </p>
   </introduction>
 
- 
+ <!-- include sections -->
+  <xi:include href="sec-Katie-Examples.ptx" />
+
+   <!-- include sections -->
+  <xi:include href="sec-Katie-Exercises.ptx" />
 
 </chapter>
