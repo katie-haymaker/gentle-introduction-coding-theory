@@ -19,6 +19,8 @@
 
       <!-- Include chapters -->
     <xi:include href="./ch-Christine-Playground.ptx" />
+    <!-- Include chapters -->
+    <xi:include href="./ch-Katie-playground.ptx" />
 
 
     <!-- Include backmatter -->
