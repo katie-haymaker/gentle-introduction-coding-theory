@@ -7,10 +7,18 @@
   <bibinfo>
   
     <author>
-      <personname>You</personname>
-      <department>Your department</department>
-      <institution>Your institution</institution>
+      <personname>Kathryn Haymaker</personname>
+      <department>Department of Mathematics and Statistics</department>
+      <institution>Villanova University</institution>
     </author>
+
+    <author>
+      <personname>Christine A. Kelley</personname>
+      <department>Department of Mathematics</department>
+      <institution>University of Nebraska-Lincoln</institution>
+    </author>
+
+
     <date>
       <today />
     </date>
