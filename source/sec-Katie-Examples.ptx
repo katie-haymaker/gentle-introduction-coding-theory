@@ -159,5 +159,81 @@ This W3C-unspecified vector image was created with Inkscape., CC BY-SA 3.0, <url
 The parity bits <m>p_2</m> and <m>p_3</m> are determined in the same way. 
 </p>
 
+<table>
+  <title>Message and Codeword Table</title>
+  <tabular>
+    <row>
+      <cell>message</cell>
+      <cell>codeword</cell>
+    </row>
+    <row>
+      <cell>0000</cell>
+      <cell>0000 000</cell>
+    </row>
+    <row>
+      <cell>0001</cell>
+      <cell>0001 111</cell>
+    </row>
+    <row>
+      <cell>0010</cell>
+      <cell>0010 011</cell>
+    </row>
+    <row>
+      <cell>0011</cell>
+      <cell>0011 100</cell>
+    </row>
+    <row>
+      <cell>0100</cell>
+      <cell>0100 101</cell>
+    </row>
+    <row>
+      <cell>0101</cell>
+      <cell>0101 010</cell>
+    </row>
+    <row>
+      <cell>0110</cell>
+      <cell>0110 110</cell>
+    </row>
+    <row>
+      <cell>0111</cell>
+      <cell>0111 001</cell>
+    </row>
+    <row>
+      <cell>1000</cell>
+      <cell>1000 110</cell>
+    </row>
+    <row>
+      <cell>1001</cell>
+      <cell>1001 001</cell>
+    </row>
+    <row>
+      <cell>1010</cell>
+      <cell>1010 101</cell>
+    </row>
+    <row>
+      <cell>1011</cell>
+      <cell>1011 010</cell>
+    </row>
+    <row>
+      <cell>1100</cell>
+      <cell>1100 011</cell>
+    </row>
+    <row>
+      <cell>1101</cell>
+      <cell>1101 100</cell>
+    </row>
+    <row>
+      <cell>1110</cell>
+      <cell>1110 000</cell>
+    </row>
+    <row>
+      <cell>1111</cell>
+      <cell>1111 111</cell>
+    </row>
+  </tabular>
+</table>
+
+
+
   </paragraphs>
 </section>
