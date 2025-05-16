@@ -24,7 +24,8 @@
 
   <p>
     So, for example, the word VILLANOVA would be written as: 
-<m> 01010110 \ 01001001 \ 01001100 \ 01001100  \ 01000001 \ 01001110 \ 01001111 \ 01010110 \ 01000001 </m>
+<m> 01010110</m> <m> 01001001 </m> <m> 01001100 </m> <m> 01001100  </m> <m> 01000001 </m> <m> 01001110</m>
+<m>  01001111 </m> <m> 01010110 </m> <m> 01000001 </m>
 
   </p>
 
@@ -50,7 +51,7 @@
           </p>
         </introduction>
 
-        <exercise xml:id="send-message" workspace="4in">
+        <exercise xml:id="send-message" workspace="2in">
   
           <statement>
     <p>
@@ -59,7 +60,7 @@
   </statement>
   </exercise>
 
-   <exercise xml:id="add-errors" workspace="4in"> 
+   <exercise xml:id="add-errors" workspace="2in"> 
   <statement>
     <p>
       Next, person 2 should randomly change up to 20% of the characters. This process is simulating sending the message across a <term>noisy channel</term>. Feel free to be malicious in your <q>random</q> choices. 
@@ -67,7 +68,7 @@
   </statement>
 </exercise>
 
-<exercise xml:id="worksheet-decode" workspace="4in"> 
+<exercise xml:id="worksheet-decode" workspace="2in"> 
   <statement>
     <p>
       Person 3 should recieve the message and try to write down what they think the original message was. 
@@ -75,7 +76,7 @@
   </statement>
 </exercise>
 
-<exercise xml:id="worksheet-redundancy" workspace="4in"> 
+<exercise xml:id="worksheet-redundancy" workspace="2in"> 
   <statement>
     <p>
       How might all groups improve the process to ensure they recover the original message? 
@@ -89,7 +90,7 @@
 </exercise>
 
 
-<exercise xml:id="worksheet-try-w-redundant" workspace="4in"> 
+<exercise xml:id="worksheet-try-w-redundant" workspace="2in"> 
   <statement>
     <p>
       Try the above steps again with a new repeated message.  
@@ -97,10 +98,10 @@
   </statement>
 </exercise>
 
-<exercise xml:id="worksheet-repeat" workspace="4in"> 
+<exercise xml:id="worksheet-repeat" workspace="2in"> 
   <statement>
     <p>
-      Now all groups should work together on the message: 010. 
+      Now all groups should work together on the message: 010. What happens when 3 copies of the message are sent? What about when 5 copies are sent?  
     </p>
   </statement>
 </exercise>
@@ -112,7 +113,51 @@
   <paragraphs>
     <title>Neat example: Hamming codes</title>
     <p>
-      
+      We saw on day 1 that repeating a message can help to ensure accurate transmission across a `noisy channel'. But the point of this whole semester will be to discover methods that are more efficient (cheaper storage) than simple repetition. The following small example shows one method. 
+
+Let's say that you have 4 data bits that you wish to send. You can do better than simple repetition by adding three <term>parity bits</term> to your message. Parity bits are a particular form of redundancy that you can add to data --- specifically they record whether the total number of ones is even (parity bit 0) or odd (parity bit 1). 
+
     </p>
+<p>
+  For example, for each string, a parity bit is shown in red: <m> 011 \textcolor{red}{0} </m>
+<m> 010 \textcolor{red}{1} </m>.
+</p>
+<p>
+  Label your 4 data bits as <m>d_1, d_2, d_3, d_4</m> and your three parity bits as <m>p_1, p_2, p_3</m>. Your message will be one of the following 16 strings: 
+
+</p>
+<table>
+  <title>Table of possible messages</title>
+  <tabular>
+    <row>
+      <cell>0000</cell><cell>0001</cell><cell>0010</cell><cell>0011</cell>
+    </row>
+    <row>
+      <cell>0100 </cell><cell> 0101 </cell><cell> 0110 </cell><cell> 0111</cell>
+    </row>
+    <row>
+      <cell>1000</cell><cell>0101</cell><cell>1010</cell><cell>1011</cell>
+    </row>
+    <row>
+      <cell>1100</cell><cell>1101</cell><cell>1110</cell><cell>1111</cell>
+    </row>
+  </tabular>
+</table>
+<p>
+  To determine the <term>codeword</term> that you should send, the diagram in <xref ref="fig-hamming"/> shows how to calculate the value of each parity bit. 
+
+</p>
+<figure xml:id="fig-hamming">
+  <caption>By en:User:Cburnett - Own work; 
+This W3C-unspecified vector image was created with Inkscape., CC BY-SA 3.0, <url href="https://commons.wikimedia.org/w/index.php?curid=1511411/" visual="https://commons.wikimedia.org/w/index.php?curid=1511411/"/> </caption>
+<image source="Hamming(7,4).svg" width="80%" />
+</figure>
+
+<p>
+  Since <m>p_1</m> is contained in the circle with <m>d_1, d_2</m>, and <m>d_4</m>, that indicates that <m>p_1</m> is a parity bit for those three data bits. For example, if your message has <m>d_1=d_2=1</m>, and <m>d_4=0</m>, there are an even number of 1s among those three data bits, so <m>p_1=0</m>. 
+
+The parity bits <m>p_2</m> and <m>p_3</m> are determined in the same way. 
+</p>
+
   </paragraphs>
 </section>
