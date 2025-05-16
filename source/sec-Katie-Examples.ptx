@@ -5,4 +5,114 @@
 
   <p> Katie will put examples in progress here. </p>
 
+
+  <p>
+    Throughout this course,   messages will often be represented as strings of 0s and 1s. One way to conceptualize turning the Latin alphabet into strings of 0s and 1s is to use ASCII (American Standard Code for Information Interchange). 
+  </p>
+
+  <me>
+    A \leftrightarrow 01000001
+  </me>
+    <me>
+     B \leftrightarrow 01000010 
+    </me>
+     
+ <me>
+  \vdots 
+ </me>
+  <me> Z \leftrightarrow 01011010 </me>
+
+  <p>
+    So, for example, the word VILLANOVA would be written as: 
+<m> 01010110 \ 01001001 \ 01001100 \ 01001100  \ 01000001 \ 01001110 \ 01001111 \ 01010110 \ 01000001 </m>
+
+  </p>
+
+  <p>
+    Generally, we won't dwell on what any particular string of 0s and 1s translates to in English. For now, just assume that all messages are represented as 0s and 1s (called <term>bits </term> for 'binary digits'), and that these strings contain  information that could be understood and read with the proper mapping.  
+
+  </p>
+
+  
+
+  <worksheet label="day1-coding-theory">
+        <title>Day 1: Redundancy to Correct Errors</title>
+
+        <objectives xml:id="objectives">
+          <ul>
+            <li>Practice sending information with redundancy</li>
+            <li>Understand the impact of the error rate</li>
+          </ul>
+        </objectives>
+        <introduction>
+          <p>
+            Form groups of 3 people. Person 1 will be sending a message. Person 2 will represent a <q>noisy channel</q>. Person 3 will be receiving the message. 
+          </p>
+        </introduction>
+
+        <exercise xml:id="send-message" workspace="4in">
+  
+          <statement>
+    <p>
+      Person 1 should write a message on a personal whiteboard and make a record of it (write it down or take a picture). Make it at most 100 characters. (Count the characters and write down that number at the bottom of the board.)
+    </p>
+  </statement>
+  </exercise>
+
+   <exercise xml:id="add-errors" workspace="4in"> 
+  <statement>
+    <p>
+      Next, person 2 should randomly change up to 20% of the characters. This process is simulating sending the message across a <term>noisy channel</term>. Feel free to be malicious in your <q>random</q> choices. 
+    </p>
+  </statement>
+</exercise>
+
+<exercise xml:id="worksheet-decode" workspace="4in"> 
+  <statement>
+    <p>
+      Person 3 should recieve the message and try to write down what they think the original message was. 
+    </p>
+  </statement>
+</exercise>
+
+<exercise xml:id="worksheet-redundancy" workspace="4in"> 
+  <statement>
+    <p>
+      How might all groups improve the process to ensure they recover the original message? 
+    </p>
+  </statement>
+  <hint>
+    <p>
+      What happens if you repeat the message? 
+    </p>
+  </hint>
+</exercise>
+
+
+<exercise xml:id="worksheet-try-w-redundant" workspace="4in"> 
+  <statement>
+    <p>
+      Try the above steps again with a new repeated message.  
+    </p>
+  </statement>
+</exercise>
+
+<exercise xml:id="worksheet-repeat" workspace="4in"> 
+  <statement>
+    <p>
+      Now all groups should work together on the message: 010. 
+    </p>
+  </statement>
+</exercise>
+
+
+  </worksheet>
+
+
+  <paragraphs>
+    <title>Neat example: Hamming codes</title>
+    <p>
+      
+    </p>
+  </paragraphs>
 </section>
